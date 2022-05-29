@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DDDDDD;
+    color: rgb(53, 50, 47);
+    font-family: 'Lato', sans-serif
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header,
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, 
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: whitesmoke;
+}
+
+form button{
+    color: #61bfd3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+form button:hover{
+background:#EF3D5B ;
+color: whitesmoke;
+}
+
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+
+}
+
+.todo{
+    margin: 0.5rem;
+    background: whitesmoke;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease ;
+}
+ /* it moves all the buttons to the right */
+.todo li{
+    flex: 1;
+
+}
+
+
+.trash-btn , 
+.complet-button {
+background: #EF3D5B;
+ color: whitesmoke;
+ border: none;
+ cursor: pointer;
+ padding: 1rem;
+ font-size: 1rem;
+}
+
+.complet-button{
+    
+    background: #61bfd3;
+}
+
+
+/* to be albe to click in the button*/
+
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+
+.done{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
